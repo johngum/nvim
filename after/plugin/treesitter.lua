@@ -6,15 +6,15 @@ require("nvim-treesitter.configs").setup({
         "javascript",
         "json",
         "lua",
-        "php",
-        "phpdoc",
-        "sql",
+        -- "php",
+        -- "phpdoc",
+        -- "sql",
         "yaml"
     },
     sync_installed = true,
     highlight = {
         enable = true, -- This is a MUST
-        additional_vim_regex_highlighting = { "php" },
+        -- additional_vim_regex_highlighting = { "php" },
     },
     indent = {
         enable = false, -- Really breaks stuff if true

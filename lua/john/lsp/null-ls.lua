@@ -13,11 +13,15 @@ null_ls.setup({
     diagnostics_format = "#{m} (#{c}) [#{s}]",
 	sources = {
         null_ls.builtins.completion.spell,
-        diagnostics.phpcs,
+        -- diagnostics.phpcs,
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
-		formatting.stylua,
-        formatting.phpcbf,
+
+        -- lua
+        formatting.stylua,
+
+        -- php
+        -- formatting.phpcbf,
 	},
 })
 

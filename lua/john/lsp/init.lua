@@ -5,7 +5,7 @@ local servers = {
     "html",
     "jsonls",
     "lemminx", -- XML
-    "phpactor",
+    -- "phpactor",
     "sumneko_lua",
     "tsserver",
     "yamlls"
