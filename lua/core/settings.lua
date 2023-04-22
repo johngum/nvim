@@ -9,20 +9,28 @@ set path+=**
 set iskeyword+=-
 ]])
 
+-- globales
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+vim.g.netrw_browse_split = 0
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 25
+
 local opt = {
     -- general behavior
     clipboard = "unnamedplus",
-    cmdheight = 2,
+    cmdheight = 1,
     cursorline = true,
     guicursor = "",
     hidden = true,
     laststatus = 2,
     listchars = "tab:――,space:⋅,trail:-,nbsp:+,eol:$",
     showmatch = false,
-    showmode = false,
+    showmode = true,
     splitbelow = true,
     splitright = true,
     wildmenu = true,
+    mouse = "",
 
     -- completion <C-n>
     completeopt = 'menuone,noselect',
@@ -70,4 +78,3 @@ local opt = {
 for k, v in pairs(opt) do
     vim.opt[k] = v
 end
-
