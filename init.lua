@@ -1,5 +1,5 @@
-require("core.settings")
-require("core.plugins")
+require("settings")
+require("plugins")
 
 
 -- regular keymappings
