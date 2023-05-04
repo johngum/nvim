@@ -24,15 +24,19 @@ require("lazy").setup({
     },
     -- context awareness
     {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate"
+        'nvim-treesitter/nvim-treesitter',
+        build = ':TSUpdate'
     },
     {
-        "nvim-treesitter/nvim-treesitter-context"
+        'nvim-treesitter/nvim-treesitter-context'
     },
     {
         'nvim-telescope/telescope.nvim', branch = '0.1.x',
         dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+    -- GIT integration
+    {
+        'tpope/vim-fugitive'
     },
     -- LSP
     {
@@ -46,7 +50,7 @@ require("lazy").setup({
                     pcall(vim.cmd, 'MasonUpdate')
                 end,
             },
-            { 'williamboman/mason-lspconfig.nvim' },
+            {'williamboman/mason-lspconfig.nvim'},
 
             -- Autocompletion
             {'L3MON4D3/LuaSnip'},
